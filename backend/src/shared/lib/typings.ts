@@ -94,7 +94,7 @@ export interface RequestDefinition extends Record<string, any> {
   type?: string | RequestType;
   resolve?: HandleFunc;
   event?: string;
-  handle: (data: EventData, services: Services) => Promise<any>;
+  handle?: (data: EventData, services: Services) => Promise<any>;
 }
 
 export interface InjectedFields {

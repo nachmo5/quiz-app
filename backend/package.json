@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "ts-node src/index.ts",
+    "dev": "npx ts-node src/index.ts",
     "compile": "npx tsc",
     "prepare": "npm version patch && npx tsc",
     "test:config": "npx ts-jest config:init",

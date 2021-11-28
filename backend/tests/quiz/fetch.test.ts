@@ -1,4 +1,5 @@
 import request from '../../src/requests/quiz/fetch';
+import { HandleFunc } from '../../src/shared/lib';
 import createMocks from '../mocks';
 
 test('should fetch correct data', async () => {
@@ -6,7 +7,7 @@ test('should fetch correct data', async () => {
 
   $database.select = () => Promise.resolve({ root: [{ id: 'my id', title: 'quiz 1' }] });
 
-  const result = await request.handle(
+  const result = await (request.handle as HandleFunc)(
     { args: {}, output: { type: 'Quiz', fields: [{ name: 'id' }] } },
     { $database, ...rest }
   );

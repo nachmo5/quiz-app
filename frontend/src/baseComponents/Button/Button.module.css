@@ -1,0 +1,15 @@
+.button {
+  padding: 8px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.button:active {
+  transform: scale(0.99);
+  box-shadow: 1px 1px 1px #f0f0f0;
+}
+
+.button:hover {
+  opacity: 0.8;
+}

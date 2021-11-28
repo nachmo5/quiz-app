@@ -1,0 +1,23 @@
+:root {
+  --PRIMARY: #13275c;
+  --SECONDARY: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}

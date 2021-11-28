@@ -1,0 +1,23 @@
+.question {
+  border: 2px solid var(--PRIMARY);
+  border-radius: 12px;
+  min-width: 500px;
+  max-width: 800px;
+  width: 50vw;
+  padding: 20px;
+}
+
+.label {
+  font-weight: 500;
+  color: '#D5D5D5';
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.questionChoice {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  cursor: pointer;
+}
